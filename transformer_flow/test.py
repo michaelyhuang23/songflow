@@ -32,12 +32,8 @@ flow.eval()
 n_fft = 1000
 sampling_rate = 44100
 
-def generate_audio(z=None):
-    if z is None:
-        c_data = flow.sample(1)[0]
-    else:
-        c_data = flow._transform.inverse(z)[0]
-    spec = dataset.revert_tensor(c_data).cpu().numpy()
+def generate_audio(data):
+    spec = dataset.revert_tensor(data).cpu().numpy().astype('float64')
     spec_x = spec[:len(spec)//2]
     spec_y = spec[len(spec)//2:]
     r_audio = regenerate_audio(spec_x, spec_y, None, sampling_rate, n_fft=n_fft, hop_length=n_fft-100)
@@ -45,15 +41,21 @@ def generate_audio(z=None):
 
 with torch.no_grad():
     data = dataset[0].to(device)[None, ...]
+
+    r_audio = generate_audio(data[0])
+    sf.write('input.wav', r_audio, sampling_rate)
+
     z = flow.transform_to_noise(data)
     print('finish transform to noise')
-    r_audio = generate_audio(z)
+    c_data = flow._transform.inverse(z)[0]
+    r_audio = generate_audio(c_data)
     print('finish regenerate audio')
     sf.write('output.wav', r_audio, sampling_rate)
 
     for i in range(10):
         print(f'running {i}')
-        r_audio = generate_audio()
+        c_data = flow.sample(1)[0]
+        r_audio = generate_audio(c_data)
         sf.write(f'output_{i}.wav', r_audio, sampling_rate)
 
 
