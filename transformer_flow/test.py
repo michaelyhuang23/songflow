@@ -34,9 +34,9 @@ sampling_rate = 44100
 
 def generate_audio(z=None):
     if z is None:
-        c_data = flow.sample(1) 
+        c_data = flow.sample(1)[0]
     else:
-        c_data = flow._transform.inverse(z)
+        c_data = flow._transform.inverse(z)[0]
     spec = dataset.revert_tensor(c_data).cpu().numpy()
     spec_x = spec[:len(spec)//2]
     spec_y = spec[len(spec)//2:]
