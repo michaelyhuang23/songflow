@@ -1,0 +1,31 @@
+{
+    "os": "macOS-14.0-arm64-arm-64bit",
+    "python": "3.11.5",
+    "heartbeatAt": "2023-12-13T03:57:39.705938",
+    "startedAt": "2023-12-13T03:57:39.334981",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/yh_huang/ProjectData/songflow/transformer_flow/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "host": "dhcp-10-29-142-51.dyn.MIT.EDU",
+    "username": "yh_huang",
+    "executable": "/Users/yh_huang/venv/songflow/bin/python3",
+    "cpu_count": 12,
+    "cpu_count_logical": 12,
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 12.442859649658203
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

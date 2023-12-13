@@ -1,0 +1,19 @@
+
+torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008])
+torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008])
+torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008])
+torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008])
+torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008])
+torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008])
+torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008])
+torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008])
+torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008])
+torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008]) torch.Size([32, 491, 1008])
+Traceback (most recent call last):
+  File "/Users/yh_huang/ProjectData/songflow/transformer_flow/train.py", line 52, in <module>
+    loss.backward()
+  File "/Users/yh_huang/venv/songflow/lib/python3.11/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/Users/yh_huang/venv/songflow/lib/python3.11/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

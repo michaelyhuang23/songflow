@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/Users/yh_huang/ProjectData/songflow/transformer_flow/train.py", line 42, in <module>
+    flow = build_model(T=dataset.T, D=dataset.D, num_layers=args.num_layers).to(device)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yh_huang/ProjectData/songflow/transformer_flow/model.py", line 82, in build_model
+    transform_list.append(MaskedAutoregresssiveAttentionTransform(features_num=T, features_dim=D, num_blocks=2, nhead=8, activation=F.relu))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yh_huang/ProjectData/songflow/transformer_flow/model.py", line 35, in __init__
+    model = MaskedTransformer(features_num, features_dim, num_blocks=num_blocks, output_size=self._output_dim_multiplier(), nhead=nhead, activation=activation)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yh_huang/ProjectData/songflow/transformer_flow/model.py", line 12, in __init__
+    encoder_layer = nn.TransformerEncoderLayer(d_model=features_dim, nhead=nhead, activation=activation, batch_first=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yh_huang/venv/songflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 553, in __init__
+    self.self_attn = MultiheadAttention(d_model, nhead, dropout=dropout,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yh_huang/venv/songflow/lib/python3.11/site-packages/torch/nn/modules/activation.py", line 991, in __init__
+    assert self.head_dim * num_heads == self.embed_dim, "embed_dim must be divisible by num_heads"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: embed_dim must be divisible by num_heads

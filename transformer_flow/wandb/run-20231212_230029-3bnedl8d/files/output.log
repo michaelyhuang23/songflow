@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "/Users/yh_huang/ProjectData/songflow/transformer_flow/train.py", line 51, in <module>
+    loss = -flow.log_prob(batch).mean()
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yh_huang/venv/songflow/lib/python3.11/site-packages/nflows/distributions/base.py", line 40, in log_prob
+    return self._log_prob(inputs, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yh_huang/venv/songflow/lib/python3.11/site-packages/nflows/flows/base.py", line 39, in _log_prob
+    noise, logabsdet = self._transform(inputs, context=embedded_context)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yh_huang/venv/songflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yh_huang/venv/songflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yh_huang/venv/songflow/lib/python3.11/site-packages/nflows/transforms/base.py", line 56, in forward
+    return self._cascade(inputs, funcs, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yh_huang/venv/songflow/lib/python3.11/site-packages/nflows/transforms/base.py", line 50, in _cascade
+    outputs, logabsdet = func(outputs, context)
+                         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yh_huang/venv/songflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yh_huang/venv/songflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yh_huang/venv/songflow/lib/python3.11/site-packages/nflows/transforms/autoregressive.py", line 39, in forward
+    outputs, logabsdet = self._elementwise_forward(inputs, autoregressive_params)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yh_huang/ProjectData/songflow/transformer_flow/model.py", line 43, in _elementwise_forward
+    unconstrained_scale, shift = self._unconstrained_scale_and_shift(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yh_huang/ProjectData/songflow/transformer_flow/model.py", line 70, in _unconstrained_scale_and_shift
+    -1, self.features, self._output_dim_multiplier()
+        ^^^^^^^^^^^^^
+  File "/Users/yh_huang/venv/songflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1695, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'MaskedAutoregresssiveAttentionTransform' object has no attribute 'features'

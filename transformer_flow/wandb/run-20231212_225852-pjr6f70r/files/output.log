@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/yh_huang/ProjectData/songflow/transformer_flow/train.py", line 39, in <module>
+    dataset = SpecDataset(os.path.join('../', args.dataset))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yh_huang/ProjectData/songflow/transformer_flow/dataset.py", line 11, in __init__
+    self.T = self[0].shape[0]
+             ~~~~^^^
+  File "/Users/yh_huang/ProjectData/songflow/transformer_flow/dataset.py", line 26, in __getitem__
+    spec = self.pad_tensor(spec)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yh_huang/ProjectData/songflow/transformer_flow/dataset.py", line 16, in pad_tensor
+    spec = F.pad(spec, (0, self.num_heads - (spec.shape[1] % self.num_heads)), 'constant', 0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: pad(): argument 'input' (position 1) must be Tensor, not numpy.ndarray

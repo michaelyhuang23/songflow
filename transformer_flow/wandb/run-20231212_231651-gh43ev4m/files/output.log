@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/yh_huang/ProjectData/songflow/transformer_flow/train.py", line 43, in <module>
+    flow = build_model(T=dataset.T, D=dataset.D, num_layers=args.num_layers, dim_feedforward=args.dim_feedforward).to(device)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yh_huang/ProjectData/songflow/transformer_flow/model.py", line 83, in build_model
+    transform_list.append(MaskedAutoregresssiveAttentionTransform(features_num=T, features_dim=D, num_blocks=2, nhead=8, dim_feedforward=dim_feedforward, activation=F.relu))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MaskedAutoregresssiveAttentionTransform.__init__() got an unexpected keyword argument 'dim_feedforward'
