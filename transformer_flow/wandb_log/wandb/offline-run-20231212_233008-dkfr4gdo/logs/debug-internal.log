@@ -1,0 +1,141 @@
+2023-12-12 23:30:08,419 INFO    StreamThr :61479 [internal.py:wandb_internal():86] W&B internal server running at pid: 61479, started at: 2023-12-12 23:30:08.417826
+2023-12-12 23:30:08,421 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: status
+2023-12-12 23:30:08,426 INFO    WriterThread:61479 [datastore.py:open_for_write():85] open: /home/gridsan/yhuang1/songflow/transformer_flow/wandb_log/wandb/offline-run-20231212_233008-dkfr4gdo/run-dkfr4gdo.wandb
+2023-12-12 23:30:08,502 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: run_start
+2023-12-12 23:30:08,507 DEBUG   HandlerThread:61479 [system_info.py:__init__():32] System info init
+2023-12-12 23:30:08,507 DEBUG   HandlerThread:61479 [system_info.py:__init__():47] System info init done
+2023-12-12 23:30:08,507 INFO    HandlerThread:61479 [system_monitor.py:start():181] Starting system monitor
+2023-12-12 23:30:08,507 INFO    SystemMonitor:61479 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-12-12 23:30:08,507 INFO    HandlerThread:61479 [system_monitor.py:probe():201] Collecting system info
+2023-12-12 23:30:08,508 INFO    SystemMonitor:61479 [interfaces.py:start():190] Started cpu monitoring
+2023-12-12 23:30:08,508 INFO    SystemMonitor:61479 [interfaces.py:start():190] Started disk monitoring
+2023-12-12 23:30:08,509 INFO    SystemMonitor:61479 [interfaces.py:start():190] Started gpu monitoring
+2023-12-12 23:30:08,510 INFO    SystemMonitor:61479 [interfaces.py:start():190] Started memory monitoring
+2023-12-12 23:30:08,511 INFO    SystemMonitor:61479 [interfaces.py:start():190] Started network monitoring
+2023-12-12 23:30:08,553 DEBUG   HandlerThread:61479 [system_info.py:probe():196] Probing system
+2023-12-12 23:30:08,557 DEBUG   HandlerThread:61479 [system_info.py:_probe_git():181] Probing git
+2023-12-12 23:30:08,571 DEBUG   HandlerThread:61479 [system_info.py:_probe_git():189] Probing git done
+2023-12-12 23:30:08,571 DEBUG   HandlerThread:61479 [system_info.py:probe():244] Probing system done
+2023-12-12 23:30:08,571 DEBUG   HandlerThread:61479 [system_monitor.py:probe():210] {'os': 'Linux-5.10.200-llgrid-x86_64-with-glibc2.35', 'python': '3.9.16', 'heartbeatAt': '2023-12-13T04:30:08.553187', 'startedAt': '2023-12-13T04:30:08.394904', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/gridsan/yhuang1/songflow/transformer_flow/train.py', 'codePathLocal': 'train.py', 'codePath': 'transformer_flow/train.py', 'git': {'remote': 'https://github.com/michaelyhuang23/songflow.git', 'commit': '8e3bf9e05488b2233a0b9a7ec9e7531cb0d8e72e'}, 'email': 'michaelyhuang23@gmail.com', 'root': '/home/gridsan/yhuang1/songflow', 'host': 'd-7-4-1', 'username': 'yhuang1', 'executable': '/state/partition1/llgrid/pkg/anaconda/anaconda3-2023a-pytorch/bin/python', 'cpu_count': 40, 'cpu_count_logical': 80, 'cpu_freq': {'current': 1929.2611750000003, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 1000.305, 'min': 0.0, 'max': 0.0}, {'current': 1000.57, 'min': 0.0, 'max': 0.0}, {'current': 1000.48, 'min': 0.0, 'max': 0.0}, {'current': 1000.577, 'min': 0.0, 'max': 0.0}, {'current': 1000.52, 'min': 0.0, 'max': 0.0}, {'current': 1000.563, 'min': 0.0, 'max': 0.0}, {'current': 1000.648, 'min': 0.0, 'max': 0.0}, {'current': 1000.443, 'min': 0.0, 'max': 0.0}, {'current': 1224.902, 'min': 0.0, 'max': 0.0}, {'current': 1354.674, 'min': 0.0, 'max': 0.0}, {'current': 1360.001, 'min': 0.0, 'max': 0.0}, {'current': 1549.808, 'min': 0.0, 'max': 0.0}, {'current': 1560.988, 'min': 0.0, 'max': 0.0}, {'current': 1480.369, 'min': 0.0, 'max': 0.0}, {'current': 1513.939, 'min': 0.0, 'max': 0.0}, {'current': 1562.379, 'min': 0.0, 'max': 0.0}, {'current': 2573.797, 'min': 0.0, 'max': 0.0}, {'current': 2309.636, 'min': 0.0, 'max': 0.0}, {'current': 2333.013, 'min': 0.0, 'max': 0.0}, {'current': 1226.885, 'min': 0.0, 'max': 0.0}, {'current': 2661.295, 'min': 0.0, 'max': 0.0}, {'current': 2638.789, 'min': 0.0, 'max': 0.0}, {'current': 2680.016, 'min': 0.0, 'max': 0.0}, {'current': 2675.447, 'min': 0.0, 'max': 0.0}, {'current': 1935.662, 'min': 0.0, 'max': 0.0}, {'current': 1979.906, 'min': 0.0, 'max': 0.0}, {'current': 2109.306, 'min': 0.0, 'max': 0.0}, {'current': 1940.304, 'min': 0.0, 'max': 0.0}, {'current': 2940.768, 'min': 0.0, 'max': 0.0}, {'current': 2729.247, 'min': 0.0, 'max': 0.0}, {'current': 2968.61, 'min': 0.0, 'max': 0.0}, {'current': 2760.387, 'min': 0.0, 'max': 0.0}, {'current': 2753.935, 'min': 0.0, 'max': 0.0}, {'current': 2677.997, 'min': 0.0, 'max': 0.0}, {'current': 2401.286, 'min': 0.0, 'max': 0.0}, {'current': 2776.367, 'min': 0.0, 'max': 0.0}, {'current': 3209.938, 'min': 0.0, 'max': 0.0}, {'current': 2396.663, 'min': 0.0, 'max': 0.0}, {'current': 1371.788, 'min': 0.0, 'max': 0.0}, {'current': 1651.129, 'min': 0.0, 'max': 0.0}, {'current': 1000.868, 'min': 0.0, 'max': 0.0}, {'current': 1176.083, 'min': 0.0, 'max': 0.0}, {'current': 1174.591, 'min': 0.0, 'max': 0.0}, {'current': 1160.22, 'min': 0.0, 'max': 0.0}, {'current': 1208.642, 'min': 0.0, 'max': 0.0}, {'current': 1174.788, 'min': 0.0, 'max': 0.0}, {'current': 1166.427, 'min': 0.0, 'max': 0.0}, {'current': 1000.801, 'min': 0.0, 'max': 0.0}, {'current': 1003.033, 'min': 0.0, 'max': 0.0}, {'current': 1010.608, 'min': 0.0, 'max': 0.0}, {'current': 1010.509, 'min': 0.0, 'max': 0.0}, {'current': 1010.135, 'min': 0.0, 'max': 0.0}, {'current': 1010.323, 'min': 0.0, 'max': 0.0}, {'current': 1010.346, 'min': 0.0, 'max': 0.0}, {'current': 1008.557, 'min': 0.0, 'max': 0.0}, {'current': 1011.899, 'min': 0.0, 'max': 0.0}, {'current': 1010.194, 'min': 0.0, 'max': 0.0}, {'current': 1341.99, 'min': 0.0, 'max': 0.0}, {'current': 1301.488, 'min': 0.0, 'max': 0.0}, {'current': 1281.588, 'min': 0.0, 'max': 0.0}, {'current': 2654.869, 'min': 0.0, 'max': 0.0}, {'current': 2805.584, 'min': 0.0, 'max': 0.0}, {'current': 2673.664, 'min': 0.0, 'max': 0.0}, {'current': 2678.27, 'min': 0.0, 'max': 0.0}, {'current': 2593.902, 'min': 0.0, 'max': 0.0}, {'current': 2654.347, 'min': 0.0, 'max': 0.0}, {'current': 2866.195, 'min': 0.0, 'max': 0.0}, {'current': 2814.262, 'min': 0.0, 'max': 0.0}, {'current': 2669.283, 'min': 0.0, 'max': 0.0}, {'current': 2783.322, 'min': 0.0, 'max': 0.0}, {'current': 2638.774, 'min': 0.0, 'max': 0.0}, {'current': 2790.667, 'min': 0.0, 'max': 0.0}, {'current': 2794.163, 'min': 0.0, 'max': 0.0}, {'current': 1937.816, 'min': 0.0, 'max': 0.0}, {'current': 3803.866, 'min': 0.0, 'max': 0.0}, {'current': 2753.313, 'min': 0.0, 'max': 0.0}, {'current': 3465.308, 'min': 0.0, 'max': 0.0}, {'current': 2652.869, 'min': 0.0, 'max': 0.0}, {'current': 2745.045, 'min': 0.0, 'max': 0.0}, {'current': 2178.948, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 439.03812408447266, 'used': 14.663818359375}}, 'gpu': 'Tesla V100-PCIE-32GB', 'gpu_count': 2, 'gpu_devices': [{'name': 'Tesla V100-PCIE-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-PCIE-32GB', 'memory_total': 34359738368}], 'memory': {'total': 377.57381439208984}}
+2023-12-12 23:30:08,571 INFO    HandlerThread:61479 [system_monitor.py:probe():211] Finished collecting system info
+2023-12-12 23:30:08,571 INFO    HandlerThread:61479 [system_monitor.py:probe():214] Publishing system info
+2023-12-12 23:30:08,571 DEBUG   HandlerThread:61479 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-12-12 23:30:08,575 DEBUG   HandlerThread:61479 [system_info.py:_save_pip():68] Saving pip packages done
+2023-12-12 23:30:08,575 DEBUG   HandlerThread:61479 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-12-12 23:30:14,634 DEBUG   HandlerThread:61479 [system_info.py:_save_conda():87] Saving conda packages done
+2023-12-12 23:30:14,638 INFO    HandlerThread:61479 [system_monitor.py:probe():216] Finished publishing system info
+2023-12-12 23:30:14,644 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: status_report
+2023-12-12 23:30:14,644 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: keepalive
+2023-12-12 23:30:14,645 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: status_report
+2023-12-12 23:30:18,646 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: status_report
+2023-12-12 23:30:18,646 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: status_report
+2023-12-12 23:30:23,648 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: status_report
+2023-12-12 23:30:23,648 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: status_report
+2023-12-12 23:30:26,649 DEBUG   SenderThread:61479 [sender.py:send():380] send: exit
+2023-12-12 23:30:26,649 INFO    SenderThread:61479 [sender.py:send_exit():585] handling exit code: 1
+2023-12-12 23:30:26,649 INFO    SenderThread:61479 [sender.py:send_exit():587] handling runtime: 18
+2023-12-12 23:30:26,651 INFO    SenderThread:61479 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-12 23:30:26,651 INFO    SenderThread:61479 [sender.py:send_exit():593] send defer
+2023-12-12 23:30:26,652 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: defer
+2023-12-12 23:30:26,652 INFO    HandlerThread:61479 [handler.py:handle_request_defer():170] handle defer: 0
+2023-12-12 23:30:26,652 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: defer
+2023-12-12 23:30:26,652 INFO    SenderThread:61479 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-12-12 23:30:26,652 INFO    SenderThread:61479 [sender.py:transition_state():613] send defer: 1
+2023-12-12 23:30:26,652 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: defer
+2023-12-12 23:30:26,652 INFO    HandlerThread:61479 [handler.py:handle_request_defer():170] handle defer: 1
+2023-12-12 23:30:26,652 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: defer
+2023-12-12 23:30:26,652 INFO    SenderThread:61479 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-12-12 23:30:26,652 INFO    SenderThread:61479 [sender.py:transition_state():613] send defer: 2
+2023-12-12 23:30:26,652 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: defer
+2023-12-12 23:30:26,652 INFO    HandlerThread:61479 [handler.py:handle_request_defer():170] handle defer: 2
+2023-12-12 23:30:26,653 INFO    HandlerThread:61479 [system_monitor.py:finish():190] Stopping system monitor
+2023-12-12 23:30:26,653 DEBUG   SystemMonitor:61479 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-12-12 23:30:26,653 INFO    HandlerThread:61479 [interfaces.py:finish():202] Joined cpu monitor
+2023-12-12 23:30:26,653 DEBUG   SystemMonitor:61479 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-12-12 23:30:26,653 INFO    HandlerThread:61479 [interfaces.py:finish():202] Joined disk monitor
+2023-12-12 23:30:26,653 DEBUG   SystemMonitor:61479 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-12-12 23:30:26,662 INFO    HandlerThread:61479 [interfaces.py:finish():202] Joined gpu monitor
+2023-12-12 23:30:26,662 INFO    HandlerThread:61479 [interfaces.py:finish():202] Joined memory monitor
+2023-12-12 23:30:26,662 INFO    HandlerThread:61479 [interfaces.py:finish():202] Joined network monitor
+2023-12-12 23:30:26,662 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: defer
+2023-12-12 23:30:26,663 INFO    SenderThread:61479 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-12-12 23:30:26,663 INFO    SenderThread:61479 [sender.py:transition_state():613] send defer: 3
+2023-12-12 23:30:26,663 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: defer
+2023-12-12 23:30:26,663 INFO    HandlerThread:61479 [handler.py:handle_request_defer():170] handle defer: 3
+2023-12-12 23:30:26,663 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: defer
+2023-12-12 23:30:26,663 INFO    SenderThread:61479 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-12-12 23:30:26,663 INFO    SenderThread:61479 [sender.py:transition_state():613] send defer: 4
+2023-12-12 23:30:26,663 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: defer
+2023-12-12 23:30:26,663 INFO    HandlerThread:61479 [handler.py:handle_request_defer():170] handle defer: 4
+2023-12-12 23:30:26,663 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: defer
+2023-12-12 23:30:26,663 INFO    SenderThread:61479 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-12-12 23:30:26,663 INFO    SenderThread:61479 [sender.py:transition_state():613] send defer: 5
+2023-12-12 23:30:26,663 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: defer
+2023-12-12 23:30:26,663 INFO    HandlerThread:61479 [handler.py:handle_request_defer():170] handle defer: 5
+2023-12-12 23:30:26,663 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: defer
+2023-12-12 23:30:26,664 INFO    SenderThread:61479 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-12-12 23:30:26,664 INFO    SenderThread:61479 [sender.py:transition_state():613] send defer: 6
+2023-12-12 23:30:26,664 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: defer
+2023-12-12 23:30:26,664 INFO    HandlerThread:61479 [handler.py:handle_request_defer():170] handle defer: 6
+2023-12-12 23:30:26,664 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: defer
+2023-12-12 23:30:26,664 INFO    SenderThread:61479 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-12-12 23:30:26,664 INFO    SenderThread:61479 [sender.py:transition_state():613] send defer: 7
+2023-12-12 23:30:26,664 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: status_report
+2023-12-12 23:30:26,664 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: defer
+2023-12-12 23:30:26,664 INFO    HandlerThread:61479 [handler.py:handle_request_defer():170] handle defer: 7
+2023-12-12 23:30:26,664 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: status_report
+2023-12-12 23:30:26,664 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: defer
+2023-12-12 23:30:26,664 INFO    SenderThread:61479 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-12-12 23:30:26,664 INFO    SenderThread:61479 [sender.py:transition_state():613] send defer: 8
+2023-12-12 23:30:26,664 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: defer
+2023-12-12 23:30:26,664 INFO    HandlerThread:61479 [handler.py:handle_request_defer():170] handle defer: 8
+2023-12-12 23:30:26,664 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: defer
+2023-12-12 23:30:26,664 INFO    SenderThread:61479 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-12-12 23:30:26,665 INFO    SenderThread:61479 [sender.py:transition_state():613] send defer: 9
+2023-12-12 23:30:26,665 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: defer
+2023-12-12 23:30:26,665 INFO    HandlerThread:61479 [handler.py:handle_request_defer():170] handle defer: 9
+2023-12-12 23:30:26,665 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: defer
+2023-12-12 23:30:26,665 INFO    SenderThread:61479 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-12-12 23:30:26,665 INFO    SenderThread:61479 [sender.py:transition_state():613] send defer: 10
+2023-12-12 23:30:26,665 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: defer
+2023-12-12 23:30:26,665 INFO    HandlerThread:61479 [handler.py:handle_request_defer():170] handle defer: 10
+2023-12-12 23:30:26,665 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: defer
+2023-12-12 23:30:26,665 INFO    SenderThread:61479 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-12-12 23:30:26,665 INFO    SenderThread:61479 [sender.py:transition_state():613] send defer: 11
+2023-12-12 23:30:26,665 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: defer
+2023-12-12 23:30:26,665 INFO    HandlerThread:61479 [handler.py:handle_request_defer():170] handle defer: 11
+2023-12-12 23:30:26,665 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: defer
+2023-12-12 23:30:26,665 INFO    SenderThread:61479 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-12-12 23:30:26,665 INFO    SenderThread:61479 [sender.py:transition_state():613] send defer: 12
+2023-12-12 23:30:26,665 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: defer
+2023-12-12 23:30:26,665 INFO    HandlerThread:61479 [handler.py:handle_request_defer():170] handle defer: 12
+2023-12-12 23:30:26,665 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: defer
+2023-12-12 23:30:26,666 INFO    SenderThread:61479 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-12-12 23:30:26,666 INFO    SenderThread:61479 [sender.py:transition_state():613] send defer: 13
+2023-12-12 23:30:26,666 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: defer
+2023-12-12 23:30:26,666 INFO    HandlerThread:61479 [handler.py:handle_request_defer():170] handle defer: 13
+2023-12-12 23:30:26,666 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: defer
+2023-12-12 23:30:26,666 INFO    SenderThread:61479 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-12-12 23:30:26,666 INFO    SenderThread:61479 [sender.py:transition_state():613] send defer: 14
+2023-12-12 23:30:26,666 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: defer
+2023-12-12 23:30:26,666 DEBUG   SenderThread:61479 [sender.py:send():380] send: final
+2023-12-12 23:30:26,666 INFO    HandlerThread:61479 [handler.py:handle_request_defer():170] handle defer: 14
+2023-12-12 23:30:26,666 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: defer
+2023-12-12 23:30:26,666 INFO    SenderThread:61479 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-12-12 23:30:26,667 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: poll_exit
+2023-12-12 23:30:26,667 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: poll_exit
+2023-12-12 23:30:26,667 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: poll_exit
+2023-12-12 23:30:26,667 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: poll_exit
+2023-12-12 23:30:26,667 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: server_info
+2023-12-12 23:30:26,667 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: server_info
+2023-12-12 23:30:26,668 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: get_summary
+2023-12-12 23:30:26,668 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: sampled_history
+2023-12-12 23:30:26,668 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: internal_messages
+2023-12-12 23:30:26,668 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: job_info
+2023-12-12 23:30:26,668 DEBUG   SenderThread:61479 [sender.py:send_request():407] send_request: job_info
+2023-12-12 23:30:26,668 INFO    MainThread:61479 [wandb_run.py:_footer_history_summary_info():3554] rendering history
+2023-12-12 23:30:26,668 INFO    MainThread:61479 [wandb_run.py:_footer_history_summary_info():3586] rendering summary
+2023-12-12 23:30:26,669 DEBUG   HandlerThread:61479 [handler.py:handle_request():144] handle_request: shutdown
+2023-12-12 23:30:26,669 INFO    HandlerThread:61479 [handler.py:finish():844] shutting down handler
+2023-12-12 23:30:27,668 INFO    WriterThread:61479 [datastore.py:close():294] close: /home/gridsan/yhuang1/songflow/transformer_flow/wandb_log/wandb/offline-run-20231212_233008-dkfr4gdo/run-dkfr4gdo.wandb
+2023-12-12 23:30:27,668 INFO    SenderThread:61479 [sender.py:finish():1534] shutting down sender
