@@ -15,6 +15,7 @@ def save_model(epoch, model, path):
 
 if __name__ == '__main__':
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    print(f'Using device: {device}')
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', type=str, default='square_jamendo_data')
@@ -29,6 +30,10 @@ if __name__ == '__main__':
     results_dir = os.path.join('results', '_'.join([f'{k}={v}' for k, v in vars(args).items()]))
     if not os.path.exists(results_dir):
         os.makedirs(results_dir)
+
+    os.environ["WANDB_API_KEY"] = 'd1b0878433065e9dcd09b271a9f48a69e1a8e543' # Michael's api key
+    os.environ["WANDB_MODE"] = 'offline'
+    os.environ["WANDB_DIR"] = 'wandb_log'
 
     wandb.init(
         project="songflow",
