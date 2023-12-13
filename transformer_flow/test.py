@@ -48,6 +48,7 @@ with torch.no_grad():
     z = flow.transform_to_noise(data)
     print('finish transform to noise')
     c_data = flow._transform.inverse(z)[0]
+    print(c_data.shape)
     r_audio = generate_audio(c_data)
     print('finish regenerate audio')
     sf.write('output.wav', r_audio, sampling_rate)
