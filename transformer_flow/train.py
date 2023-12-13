@@ -33,7 +33,7 @@ if __name__ == '__main__':
 
     os.environ["WANDB_API_KEY"] = 'd1b0878433065e9dcd09b271a9f48a69e1a8e543' # Michael's api key
     os.environ["WANDB_MODE"] = 'offline'
-    os.environ["WANDB_DIR"] = 'wandb_log'
+    os.environ["WANDB_DIR"] = '/home/gridsan/yhuang1/songflow/transformer_flow/wandb_log'
 
     wandb.init(
         project="songflow",
