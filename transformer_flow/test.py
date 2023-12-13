@@ -7,6 +7,7 @@ import os
 import soundfile as sf
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print(f'Using device: {device}')
 
 model_folder = 'dataset=square_jamendo_data_epochs=10_batch_size=5_lr=0.0005_num_layers=10_dim_feedforward=128'
 model_path = os.path.join('results', model_folder, '9.pth')
@@ -31,19 +32,29 @@ flow.eval()
 n_fft = 1000
 sampling_rate = 44100
 
-with torch.no_grad():
-    data = dataset[0].to(device)[None, ...]
-    print(data.shape)
-
-    z = flow.transform_to_noise(data)
-    print(z.shape)
-
-    c_data = flow._transform.inverse(z)
-    print(c_data.shape)
-    print(torch.norm(data - c_data))
-
+def generate_audio(z=None):
+    if z is None:
+        c_data = flow.sample(1) 
+    else:
+        c_data = flow._transform.inverse(z)
     spec = dataset.revert_tensor(c_data).cpu().numpy()
     spec_x = spec[:len(spec)//2]
     spec_y = spec[len(spec)//2:]
     r_audio = regenerate_audio(spec_x, spec_y, None, sampling_rate, n_fft=n_fft, hop_length=n_fft-100)
+    return r_audio
+
+with torch.no_grad():
+    data = dataset[0].to(device)[None, ...]
+    z = flow.transform_to_noise(data)
+    print('finish transform to noise')
+    r_audio = generate_audio(z)
+    print('finish regenerate audio')
     sf.write('output.wav', r_audio, sampling_rate)
+
+    for i in range(10):
+        print(f'running {i}')
+        r_audio = generate_audio()
+        sf.write(f'output_{i}.wav', r_audio, sampling_rate)
+
+
+    

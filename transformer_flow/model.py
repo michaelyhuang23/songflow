@@ -17,7 +17,7 @@ class MaskedTransformer(nn.Module):
         self.mask = nn.Parameter(torch.triu(torch.ones(features_num, features_num), diagonal=1).bool(), requires_grad=False)
 
     def forward(self, x, context=None):
-        x = self.activation(self.transformer_encoder(x, mask=self.mask))
+        x = self.activation(self.transformer_encoder(x, mask=self.mask.data))
         return self.linear2(self.linear1(x)) # this is a rather sketchy way of doing things
 
 
