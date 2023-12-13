@@ -7,6 +7,7 @@ class SpecDataset(torch.utils.data.Dataset):
         self.root_dir = root_dir
         self.transform = transform
         self.files = [os.path.join(root_dir, file) for file in os.listdir(root_dir) if file.endswith('.pt')]
+        self.o_D = torch.load(self.files[0]).T.shape[1]
         self.num_heads = num_heads
         self.T = self[0].shape[0]
         self.D = self[0].shape[1]
@@ -15,6 +16,9 @@ class SpecDataset(torch.utils.data.Dataset):
         if spec.shape[1] % self.num_heads != 0:
             spec = F.pad(spec, (0, self.num_heads - (spec.shape[1] % self.num_heads)), 'constant', 0)
         return spec
+    
+    def revert_tensor(self, spec):
+        return spec[:, :self.o_D].T
 
     def __len__(self):
         return len(self.files)
