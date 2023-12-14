@@ -6,4 +6,4 @@ Second, facebook has a VQ-VAE encoder for audio that is accessible through the h
 
 Third, we should use a larger dataset which I'm generating right now. 
 
-Actually, approach 2's tokenizer discretizes audio into discrete categorical tokens that is good for LLM. 
+Actually, approach 2's tokenizer discretizes audio into discrete categorical tokens that is good for LLM. However, I have realized that the vocoder model like WaveFlow are actually capable of generating audio from low quality spectrogram.

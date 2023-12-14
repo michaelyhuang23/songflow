@@ -13,7 +13,6 @@ def find_sound_start_end(audio, sr, threshold_percentile=1):
     # Compute the energy of the audio
     energy = librosa.feature.rms(y=audio)[0]
     threshold = np.percentile(energy, threshold_percentile)
-    print(np.mean(energy), np.std(energy), threshold)
 
     # Find frames exceeding the threshold
     frames = np.where(energy > threshold)[0]
@@ -25,6 +24,8 @@ def find_sound_start_end(audio, sr, threshold_percentile=1):
     start_frame, end_frame = frames[0], frames[-1]
     start_sample = librosa.frames_to_samples(start_frame)
     end_sample = librosa.frames_to_samples(end_frame)
+
+    print(f'fraction of audio kept: {(end_sample - start_sample) / len(audio)}')
 
     return start_sample, end_sample
 
@@ -44,13 +45,17 @@ def split_into_clips(audio, sr, clip_length=10):
 
     return clips
 
-def save_clips(clips, sr, output_dir):
-    for i, clip in enumerate(clips):
-        filename = os.path.join(output_dir, f"{i}.wav")
+def save_clips(clips, sr, output_dir, idx):
+    for clip in clips:
+        filename = os.path.join(output_dir, f"{idx}.wav")
+        idx += 1
         sf.write(filename, clip, sr)
+    return idx
 
 root_dir = '../jamendo-data'
 output_dir = '../processed_jamendo_data'
+
+idx = 0
 
 for folder in os.listdir(root_dir):
     if 'DS' in folder: continue
@@ -67,4 +72,4 @@ for folder in os.listdir(root_dir):
         # Split the audio into 10-second clips
         clips = split_into_clips(audio_with_sound, sr, 10)
 
-        save_clips(clips, sr, output_dir)
+        idx = save_clips(clips, sr, output_dir, idx)
