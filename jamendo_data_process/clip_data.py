@@ -57,7 +57,7 @@ def save_clips(clips, sr, output_dir, idx):
 
 def process_folder(folder):
     root_dir = '../jamendo-data'
-    output_dir = '../processed_jamendo_data'
+    output_dir = '../full_processed_jamendo_data'
     folder_path = os.path.join(root_dir, folder)
     idx = 0
     file_output_dir = os.path.join(output_dir, folder)
@@ -83,7 +83,7 @@ def parallel_process_folder(args):
 
 if __name__ == '__main__':
     root_dir = '../jamendo-data'
-    output_dir = '../processed_jamendo_data'
+    output_dir = '../full_processed_jamendo_data'
     folder_list = [folder for folder in os.listdir(root_dir) if not 'DS' in folder]
 
     # Number of processes
