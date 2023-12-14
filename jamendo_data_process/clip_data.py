@@ -76,6 +76,7 @@ def process_folder(folder):
         clips = split_into_clips(audio_with_sound, sr, 10)
 
         idx = save_clips(clips, sr, file_output_dir, idx)
+    print(f'Processed {folder}')
 
 def parallel_process_folder(args):
     return process_folder(*args)
