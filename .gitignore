@@ -1,5 +1,6 @@
 jamendo-data/
 processed_jamendo_data/
+full_processed_jamendo_data/
 square_jamendo_data/
 square_mel_jamendo_data/
 transformer_flow/results/

@@ -1,0 +1,6 @@
+Copying files from ../full_processed_jamendo_data/08 to ../processed_jamendo_data
+Copying files from ../full_processed_jamendo_data/58 to ../processed_jamendo_data
+Copying files from ../full_processed_jamendo_data/90 to ../processed_jamendo_data
+Copying files from ../full_processed_jamendo_data/50 to ../processed_jamendo_data
+Copying files from ../full_processed_jamendo_data/82 to ../processed_jamendo_data
+File copying and renaming complete.

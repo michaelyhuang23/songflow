@@ -1,13 +1,3 @@
-/var/spool/slurmd/job24476025/slurm_script: line 8: module: command not found
+/var/spool/slurmd/job24485342/slurm_script: line 8: module: command not found
 /state/partition1/llgrid/pkg/anaconda/anaconda3-2023a-pytorch/lib/python3.9/site-packages/torch/nn/modules/transformer.py:544: UserWarning: Converting mask without torch.bool dtype to bool; this will negatively affect performance. Prefer to use a boolean mask directly. (Triggered internally at ../aten/src/ATen/native/transformers/attention.cpp:150.)
   return torch._transformer_encoder_layer_fwd(
-Using device: cuda
-finish transform to noise
-Traceback (most recent call last):
-  File "/home/gridsan/yhuang1/songflow/transformer_flow/test.py", line 50, in <module>
-    r_audio = generate_audio(z)
-  File "/home/gridsan/yhuang1/songflow/transformer_flow/test.py", line 40, in generate_audio
-    spec = dataset.revert_tensor(c_data).cpu().numpy()
-  File "/home/gridsan/yhuang1/songflow/transformer_flow/dataset.py", line 21, in revert_tensor
-    return spec[:, :self.o_D].T
-TypeError: tuple indices must be integers or slices, not tuple
