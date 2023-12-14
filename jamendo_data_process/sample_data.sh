@@ -1,23 +1,21 @@
 #!/bin/bash
 
-# Define the source and destination directories
+#SBATCH --cpus-per-task=20
+#SBATCH -o sample_jamendo_data.txt
+#SBATCH --job-name=sample_jamendo_data
+
 SOURCE_DIR="../full_processed_jamendo_data"
 DEST_DIR="../processed_jamendo_data"
 
-# List of directories to copy
 DIRS=("08" "58" "90" "50" "82")
 
-# Ensure the destination directory exists
 mkdir -p "$DEST_DIR"
 
-# Loop through each directory and copy its contents
 for i in "${!DIRS[@]}"; do
     dir=${DIRS[$i]}
-    # Check if the directory exists
     if [ -d "$SOURCE_DIR/$dir" ]; then
         echo "Copying files from $SOURCE_DIR/$dir to $DEST_DIR"
 
-        # Copy each file and rename it
         for file in "$SOURCE_DIR/$dir"/*; do
             filename=$(basename "$file")
             extension="${filename##*.}"
