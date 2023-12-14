@@ -63,7 +63,6 @@ def process_folder(folder):
     file_output_dir = os.path.join(output_dir, folder)
     if not os.path.exists(file_output_dir):
         os.makedirs(file_output_dir)
-    print(file_output_dir)
     for file in os.listdir(folder_path):
         if not file.endswith('.mp3') : continue
         file_path = os.path.join(folder_path, file)
@@ -77,7 +76,6 @@ def process_folder(folder):
         clips = split_into_clips(audio_with_sound, sr, 10)
 
         idx = save_clips(clips, sr, file_output_dir, idx)
-    print(f'folder: {folder}, idx: {idx}')
 
 def parallel_process_folder(args):
     return process_folder(*args)
