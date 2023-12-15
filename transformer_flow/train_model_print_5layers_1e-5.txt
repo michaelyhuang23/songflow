@@ -1,4 +1,4 @@
-/var/spool/slurmd/job24495216/slurm_script: line 8: module: command not found
+/var/spool/slurmd/job24495827/slurm_script: line 8: module: command not found
 wandb: Tracking run with wandb version 0.15.11
 wandb: W&B syncing is set to `offline` in this directory.  
 wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.

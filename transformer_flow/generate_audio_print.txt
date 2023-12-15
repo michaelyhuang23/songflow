@@ -1,4 +1,3 @@
-/var/spool/slurmd/job24485342/slurm_script: line 8: module: command not found
-/state/partition1/llgrid/pkg/anaconda/anaconda3-2023a-pytorch/lib/python3.9/site-packages/torch/nn/modules/transformer.py:544: UserWarning: Converting mask without torch.bool dtype to bool; this will negatively affect performance. Prefer to use a boolean mask directly. (Triggered internally at ../aten/src/ATen/native/transformers/attention.cpp:150.)
-  return torch._transformer_encoder_layer_fwd(
-slurmstepd-d-13-5-1: error: *** JOB 24485342 ON d-13-5-1 CANCELLED AT 2023-12-14T13:24:15 ***
+/var/spool/slurmd/job24494299/slurm_script: line 8: module: command not found
+/home/gridsan/yhuang1/.local/lib/python3.9/site-packages/librosa/util/decorators.py:88: UserWarning: Empty filters detected in mel frequency basis. Some channels will produce empty responses. Try increasing your sampling rate (and fmax) or reducing n_mels.
+  return f(*args, **kwargs)
