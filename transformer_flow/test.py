@@ -8,26 +8,26 @@ import soundfile as sf
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(f'Using device: {device}')
-
-model_folder = 'dataset=square_jamendo_data_epochs=10_batch_size=5_lr=0.0005_num_layers=10_dim_feedforward=128'
-model_path = os.path.join('results', model_folder, '9.pth')
+# /home/gridsan/yhuang1/songflow/transformer_flow/results/dataset=square_jamendo_data_epochs=2_batch_size=5_lr=1e-05_num_layers=10_dim_feedforward=128/1_2680.pth
+model_folder = 'dataset=square_jamendo_data_epochs=2_batch_size=5_lr=1e-05_num_layers=10_dim_feedforward=128'
+model_path = os.path.join('results', model_folder, '1_2680.pth')
 
 config = {
     'dataset': 'square_jamendo_data',
-    'epochs': 10,
+    'epochs': 2,
     'batch_size': 5,
-    'lr': 0.0005,
+    'lr': 1e-05,
     'num_layers': 10,
     'dim_feedforward': 128
 }
 
 
 dataset = SpecDataset(os.path.join('../', config['dataset']))
-flow = build_model(T=40, D=dataset.D, num_layers=config['num_layers'], dim_feedforward=config['dim_feedforward']).to(device)
+flow = build_model(T=dataset.T, D=dataset.D, num_layers=config['num_layers'], dim_feedforward=config['dim_feedforward']).to(device)
 
-#checkpoint = torch.load(model_path, map_location=device)
-#share_checkpoints = {k: v for k, v in checkpoint['model_state_dict'].items() if 'autoregressive_net.mask' not in k and '_permutation' not in k}
-#flow.load_state_dict(share_checkpoints, strict=False)
+checkpoint = torch.load(model_path, map_location=device)
+share_checkpoints = {k: v for k, v in checkpoint['model_state_dict'].items() if 'autoregressive_net.mask' not in k and '_permutation' not in k}
+flow.load_state_dict(share_checkpoints, strict=False)
 
 # do not use eval mode! Transformer module has a bug where eval mode fails
 
@@ -42,7 +42,7 @@ def generate_audio(data):
     return r_audio
 
 with torch.no_grad():
-    data = dataset[1].to(device)[None, :40, :] 
+    data = dataset[0].to(device)[None, :, :] 
 
     r_audio = generate_audio(data[0])
     sf.write('input.wav', r_audio, sampling_rate)
