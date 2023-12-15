@@ -3,6 +3,7 @@ import os
 import numpy as np
 import soundfile as sf
 import torch
+import multiprocessing
 
 def process_audio(audio, mel_filter, sampling_rate, n_fft=2048, hop_length=512):
     D = librosa.stft(audio, n_fft=n_fft, hop_length=hop_length)
@@ -27,40 +28,53 @@ def generate_mel_filter(sampling_rate, n_fft=2048, n_mels=80, fmin=0, fmax=None)
     mel_filter_inv = np.linalg.pinv(mel_filter)
     return mel_filter, mel_filter_inv
 
-if __name__ == '__main__':
+sampling_rate = 44100 
+n_fft = 1000
+root_dir = '../processed_jamendo_data/11'
+output_dir = '../square_jamendo_data'
+mel_filter, mel_filter_inv = None, None
+
+def process_file(file, first_audio_len):
     sampling_rate = 44100 
     n_fft = 1000
-    root_dir = '../processed_jamendo_data'
+    root_dir = '../processed_jamendo_data/11'
     output_dir = '../square_jamendo_data'
-
-    mel_filter, mel_filter_inv = generate_mel_filter(sampling_rate, n_mels=500, fmin=0, fmax=None, n_fft=n_fft)
     mel_filter, mel_filter_inv = None, None
 
-    audio = librosa.load(os.path.join(root_dir, '0.wav'), sr=sampling_rate)[0]
+    if not file.endswith('.wav'): return
+
+    audio = librosa.load(os.path.join(root_dir, file), sr=sampling_rate)[0]
+
+    audio = audio[:first_audio_len]
 
     spec_x, spec_y = process_audio(audio, mel_filter, sampling_rate, n_fft=n_fft, hop_length=n_fft-100)
 
-    r_audio = regenerate_audio(spec_x, spec_y, mel_filter_inv, sampling_rate, n_fft=n_fft, hop_length=n_fft-100)
-    sf.write('output.wav', r_audio, sampling_rate)
+    spec = np.concatenate([spec_x, spec_y], axis=0)
 
-    first_audio_len = 0
-    for file in os.listdir(root_dir):
-        if not file.endswith('.wav'): continue
+    torch.save(torch.from_numpy(spec), os.path.join(output_dir, file.replace('.wav', '.pt')))
 
-        audio = librosa.load(os.path.join(root_dir, file), sr=sampling_rate)[0]
+def parallel_process_file(args):
+    process_file(*args)
 
-        if first_audio_len == 0:
-            first_audio_len = len(audio)
-        else:
-            audio = audio[:first_audio_len]
+if __name__ == '__main__':
+    audio = librosa.load(os.path.join(root_dir, '0.wav'), sr=sampling_rate)[0]
+    first_audio_len = len(audio)
 
-        spec_x, spec_y = process_audio(audio, mel_filter, sampling_rate, n_fft=n_fft, hop_length=n_fft-100)
+    file_names = [file for file in os.listdir(root_dir) if file.endswith('.wav')]
 
-        spec = np.concatenate([spec_x, spec_y], axis=0)
+    # Number of processes
+    num_processes = multiprocessing.cpu_count()
 
-        torch.save(torch.from_numpy(spec), os.path.join(output_dir, file.replace('.wav', '.pt')))
+    # Create a pool of processes
+    pool = multiprocessing.Pool(processes=num_processes)
 
-        #r_audio = regenerate_audio(spec_x, spec_y, mel_filter_inv, sampling_rate, n_fft=n_fft, hop_length=n_fft-100)
-        #sf.write('output.wav', r_audio, sampling_rate)
+    # Map the process_folder function to the folders
+    pool.map(parallel_process_file, zip(file_names, [first_audio_len]*len(file_names)))
+
+    # Close the pool and wait for the work to finish
+    pool.close()
+    pool.join()
+    #r_audio = regenerate_audio(spec_x, spec_y, mel_filter_inv, sampling_rate, n_fft=n_fft, hop_length=n_fft-100)
+    #sf.write('output.wav', r_audio, sampling_rate)
 
 
