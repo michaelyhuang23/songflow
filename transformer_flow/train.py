@@ -22,7 +22,7 @@ if __name__ == '__main__':
     parser.add_argument('--epochs', type=int, default=10)
     parser.add_argument('--batch_size', type=int, default=5)
     parser.add_argument('--lr', type=float, default=5e-4)
-    parser.add_argument('--num_layers', type=int, default=40)
+    parser.add_argument('--num_layers', type=int, default=10)
     parser.add_argument('--dim_feedforward', type=int, default=128)
 
     args = parser.parse_args()
