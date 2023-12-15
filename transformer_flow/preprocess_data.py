@@ -31,10 +31,10 @@ if __name__ == '__main__':
     sampling_rate = 44100 
     n_fft = 1000
     root_dir = '../processed_jamendo_data'
-    output_dir = '../square_mel_jamendo_data'
+    output_dir = '../square_jamendo_data'
 
     mel_filter, mel_filter_inv = generate_mel_filter(sampling_rate, n_mels=500, fmin=0, fmax=None, n_fft=n_fft)
-    #mel_filter, mel_filter_inv = None, None
+    mel_filter, mel_filter_inv = None, None
 
     audio = librosa.load(os.path.join(root_dir, '0.wav'), sr=sampling_rate)[0]
 
