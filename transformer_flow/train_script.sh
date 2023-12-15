@@ -2,9 +2,9 @@
 
 #SBATCH --gres=gpu:volta:1
 #SBATCH --cpus-per-task=20
-#SBATCH -o train_model_print_40layers_1e-5_mel.txt
+#SBATCH -o train_model_print_10layers_1e-5.txt
 #SBATCH --job-name=train_model
 
 module load anaconda/2023a
 
-python train.py --dataset square_mel_jamendo_data --epochs 2 --batch_size 5 --lr 1e-5 --num_layers 40 --dim_feedforward 128
+python train.py --dataset square_jamendo_data --epochs 2 --batch_size 5 --lr 1e-5 --num_layers 10 --dim_feedforward 128
