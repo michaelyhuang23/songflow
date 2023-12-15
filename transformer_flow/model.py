@@ -33,7 +33,7 @@ class MaskedTransformer(nn.Module):
         x = x + self.activation(y)
         x = torch.cumsum(x[:, :-1, :], dim=1) / torch.arange(1, x.shape[1], device=x.device).float()[None, :, None] 
         x = torch.cat((torch.zeros(x.shape[0], 1, x.shape[2], device=x.device), x), dim=1)
-        x = torch.tanh(self.linear2(self.activation(self.linear1(x))))
+        x = torch.sigmoid(self.linear2(self.activation(self.linear1(x))))
         #print(torch.min(x), torch.std(x), torch.max(x))
         return x
 
@@ -52,30 +52,30 @@ class MaskedAutoregresssiveAttentionTransform(AutoregressiveTransform):
         self.features_dim = features_dim
 
         model = MaskedTransformer(features_num, features_dim, num_blocks=num_blocks, output_size=features_dim*self._output_dim_multiplier(), nhead=nhead, dim_feedforward=dim_feedforward, activation=activation)
-        self._epsilon = 1e-8
+        self._epsilon = 0.05
         super(MaskedAutoregresssiveAttentionTransform, self).__init__(model)
 
     def _output_dim_multiplier(self):
         return 2
 
     def _elementwise_forward(self, inputs, autoregressive_params):
-        unconstrained_scale, shift = self._unconstrained_scale_and_shift(
+        log_scale, shift = self._unconstrained_scale_and_shift(
             autoregressive_params
         )
-        # scale = torch.sigmoid(unconstrained_scale + 2.0) + self._epsilon
-        scale = F.softplus(unconstrained_scale) + self._epsilon
-        log_scale = torch.log(scale)
+        #scale = torch.sigmoid(unconstrained_scale + 2.0) + self._epsilon
+        #scale = F.softplus(unconstrained_scale) + self._epsilon
+        scale = torch.exp(log_scale)
         outputs = scale * inputs + shift
         logabsdet = torchutils.sum_except_batch(log_scale, num_batch_dims=1)
         return outputs, logabsdet
 
     def _elementwise_inverse(self, inputs, autoregressive_params):
-        unconstrained_scale, shift = self._unconstrained_scale_and_shift(
+        log_scale, shift = self._unconstrained_scale_and_shift(
             autoregressive_params
         )
-        # scale = torch.sigmoid(unconstrained_scale + 2.0) + self._epsilon
-        scale = F.softplus(unconstrained_scale) + self._epsilon
-        log_scale = torch.log(scale)
+        #scale = torch.sigmoid(unconstrained_scale + 2.0) + self._epsilon
+        #scale = F.softplus(unconstrained_scale) + self._epsilon
+        scale = torch.exp(log_scale)
         outputs = (inputs - shift) / scale
         logabsdet = -torchutils.sum_except_batch(log_scale, num_batch_dims=1)
         return outputs, logabsdet

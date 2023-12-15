@@ -52,7 +52,6 @@ with torch.no_grad():
     z = flow.transform_to_noise(data)
     print(torch.min(z), torch.std(z), torch.max(z))
     print('finish transform to noise')
-    assert False
     c_data, _ = flow._transform.inverse(z)
     print(torch.max(data - c_data))
     c_data = c_data[0]
