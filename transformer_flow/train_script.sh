@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#SBATCH --gres=gpu:volta:1
 #SBATCH --cpus-per-task=20
 #SBATCH -o train_model_print.txt
 #SBATCH --job-name=train_model
