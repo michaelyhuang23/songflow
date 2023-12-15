@@ -29,12 +29,11 @@ class MaskedTransformer(nn.Module):
         #print(torch.min(x), torch.std(x), torch.max(x))
         #x[:, 1:, :] = x[:, :-1, :].clone()
         #x[:, 0, :] = 1
-        #print(torch.mean(x))
         y, _ = self.attention(x, x, x, attn_mask=self.mask)
         x = x + self.activation(y)
         x = torch.cumsum(x[:, :-1, :], dim=1) / torch.arange(1, x.shape[1], device=x.device).float()[None, :, None] 
         x = torch.cat((torch.zeros(x.shape[0], 1, x.shape[2], device=x.device), x), dim=1)
-        x = self.linear2(self.activation(self.linear1(x)))
+        x = torch.tanh(self.linear2(self.activation(self.linear1(x))))
         #print(torch.min(x), torch.std(x), torch.max(x))
         return x
 
@@ -91,7 +90,6 @@ class MaskedAutoregresssiveAttentionTransform(AutoregressiveTransform):
         )
         unconstrained_scale = autoregressive_params[..., 0]
         shift = autoregressive_params[..., 1]
-        #print(torch.mean(unconstrained_scale), torch.mean(shift))
         return unconstrained_scale, shift
 
 
