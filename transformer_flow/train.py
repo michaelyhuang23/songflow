@@ -59,7 +59,9 @@ if __name__ == '__main__':
             optimizer.step()
             wandb.log({'epoch': epoch, 'iter': i , 'loss': loss.item()})
             if i % min(len(dataloader)//10, 10) == 0:
+                noise = flow.transform_to_noise(batch)
                 print(f'Epoch {epoch}, Iter: {i}, Loss: {loss.item()}')
+                print(torch.min(noise), torch.std(noise), torch.max(noise))
             if i % (len(dataloader)//10) == 0:
                 save_model(epoch, flow, os.path.join(results_dir, f'{epoch}_{i}.pth'))
 
