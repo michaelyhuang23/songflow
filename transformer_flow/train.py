@@ -18,7 +18,7 @@ if __name__ == '__main__':
     print(f'Using device: {device}')
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset', type=str, default='square_jamendo_data')
+    parser.add_argument('--dataset', type=str, default='square_mel_jamendo_data')
     parser.add_argument('--epochs', type=int, default=10)
     parser.add_argument('--batch_size', type=int, default=5)
     parser.add_argument('--lr', type=float, default=1e-3)
