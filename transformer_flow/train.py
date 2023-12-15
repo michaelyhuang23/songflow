@@ -58,8 +58,9 @@ if __name__ == '__main__':
             loss.backward()
             optimizer.step()
             wandb.log({'epoch': epoch, 'iter': i , 'loss': loss.item()})
-            if i % min(len(dataset)//10, 10) == 0:
+            if i % min(len(dataloader)//10, 10) == 0:
                 print(f'Epoch {epoch}, Iter: {i}, Loss: {loss.item()}')
-        save_model(epoch, flow, os.path.join(results_dir, f'{epoch}.pth'))
+            if i % (len(dataloader)//10) == 0:
+                save_model(epoch, flow, os.path.join(results_dir, f'{epoch}_{i}.pth'))
 
 wandb.finish()

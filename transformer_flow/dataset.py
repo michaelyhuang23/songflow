@@ -18,7 +18,13 @@ class SpecDataset(torch.utils.data.Dataset):
         return spec
     
     def revert_tensor(self, spec):
-        return spec[:, :self.o_D].T
+        return self.revert_normalize(spec[:, :self.o_D]).T
+
+    def normalize(self, spec):
+        return spec/100
+
+    def revert_normalize(self, spec):
+        return spec*100
 
     def __len__(self):
         return len(self.files)
@@ -27,7 +33,7 @@ class SpecDataset(torch.utils.data.Dataset):
         if torch.is_tensor(idx):
             idx = idx.item()
         spec = torch.load(self.files[idx]).T
-        spec = self.pad_tensor(spec)
+        spec = self.normalize(self.pad_tensor(spec))
         if self.transform:
             spec = self.transform(spec)
         return spec
