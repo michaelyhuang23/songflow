@@ -30,14 +30,14 @@ def generate_mel_filter(sampling_rate, n_fft=2048, n_mels=80, fmin=0, fmax=None)
 
 sampling_rate = 44100 
 n_fft = 1000
-root_dir = '../processed_jamendo_data/11'
+root_dir = '../processed_jamendo_data'
 output_dir = '../square_jamendo_data'
 mel_filter, mel_filter_inv = None, None
 
 def process_file(file, first_audio_len):
     sampling_rate = 44100 
     n_fft = 1000
-    root_dir = '../processed_jamendo_data/11'
+    root_dir = '../processed_jamendo_data'
     output_dir = '../square_jamendo_data'
     mel_filter, mel_filter_inv = None, None
 
