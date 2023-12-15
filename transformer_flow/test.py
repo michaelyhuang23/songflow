@@ -23,7 +23,7 @@ config = {
 
 
 dataset = SpecDataset(os.path.join('../', config['dataset']))
-flow = build_model(T=10, D=dataset.D, num_layers=config['num_layers'], dim_feedforward=config['dim_feedforward']).to(device)
+flow = build_model(T=40, D=dataset.D, num_layers=config['num_layers'], dim_feedforward=config['dim_feedforward']).to(device)
 
 #checkpoint = torch.load(model_path, map_location=device)
 #share_checkpoints = {k: v for k, v in checkpoint['model_state_dict'].items() if 'autoregressive_net.mask' not in k and '_permutation' not in k}
@@ -42,7 +42,7 @@ def generate_audio(data):
     return r_audio
 
 with torch.no_grad():
-    data = dataset[1].to(device)[None, :10, :] 
+    data = dataset[1].to(device)[None, :40, :] 
 
     r_audio = generate_audio(data[0])
     sf.write('input.wav', r_audio, sampling_rate)
