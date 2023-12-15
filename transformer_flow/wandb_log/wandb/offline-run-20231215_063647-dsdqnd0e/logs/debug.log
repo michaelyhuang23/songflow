@@ -1,0 +1,32 @@
+2023-12-15 06:36:47,967 INFO    MainThread:209459 [wandb_setup.py:_flush():76] Current SDK version is 0.15.11
+2023-12-15 06:36:47,968 INFO    MainThread:209459 [wandb_setup.py:_flush():76] Configure stats pid to 209459
+2023-12-15 06:36:47,968 INFO    MainThread:209459 [wandb_setup.py:_flush():76] Loading settings from /home/gridsan/yhuang1/.config/wandb/settings
+2023-12-15 06:36:47,968 INFO    MainThread:209459 [wandb_setup.py:_flush():76] Loading settings from /home/gridsan/yhuang1/songflow/transformer_flow/wandb/settings
+2023-12-15 06:36:47,968 INFO    MainThread:209459 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***', 'mode': 'offline', 'root_dir': '/home/gridsan/yhuang1/songflow/transformer_flow/wandb_log'}
+2023-12-15 06:36:47,968 INFO    MainThread:209459 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-12-15 06:36:47,968 INFO    MainThread:209459 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'transformer_flow/train.py', 'program_abspath': '/home/gridsan/yhuang1/songflow/transformer_flow/train.py', 'program': '/home/gridsan/yhuang1/songflow/transformer_flow/train.py'}
+2023-12-15 06:36:47,968 INFO    MainThread:209459 [wandb_init.py:_log_setup():528] Logging user logs to /home/gridsan/yhuang1/songflow/transformer_flow/wandb_log/wandb/offline-run-20231215_063647-dsdqnd0e/logs/debug.log
+2023-12-15 06:36:47,969 INFO    MainThread:209459 [wandb_init.py:_log_setup():529] Logging internal logs to /home/gridsan/yhuang1/songflow/transformer_flow/wandb_log/wandb/offline-run-20231215_063647-dsdqnd0e/logs/debug-internal.log
+2023-12-15 06:36:47,969 INFO    MainThread:209459 [wandb_init.py:init():568] calling init triggers
+2023-12-15 06:36:47,969 INFO    MainThread:209459 [wandb_init.py:init():575] wandb.init called with sweep_config: {}
+config: {}
+2023-12-15 06:36:47,969 INFO    MainThread:209459 [wandb_init.py:init():618] starting backend
+2023-12-15 06:36:47,969 INFO    MainThread:209459 [wandb_init.py:init():622] setting up manager
+2023-12-15 06:36:47,975 INFO    MainThread:209459 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-12-15 06:36:47,976 INFO    MainThread:209459 [wandb_init.py:init():628] backend started and connected
+2023-12-15 06:36:47,982 INFO    MainThread:209459 [wandb_init.py:init():720] updated telemetry
+2023-12-15 06:36:48,006 INFO    MainThread:209459 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2023-12-15 06:36:48,011 INFO    MainThread:209459 [wandb_init.py:init():804] starting run threads in backend
+2023-12-15 06:36:54,222 INFO    MainThread:209459 [wandb_run.py:_console_start():2199] atexit reg
+2023-12-15 06:36:54,222 INFO    MainThread:209459 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2023-12-15 06:36:54,222 INFO    MainThread:209459 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2023-12-15 06:36:54,222 INFO    MainThread:209459 [wandb_run.py:_redirect():2144] Redirects installed.
+2023-12-15 06:36:54,223 INFO    MainThread:209459 [wandb_init.py:init():845] run started, returning control to user process
+2023-12-15 06:36:54,223 INFO    MainThread:209459 [wandb_run.py:_config_callback():1324] config_cb None None {'dataset': 'square_mel_jamendo_data', 'epochs': 2, 'batch_size': 5, 'lr': 3e-06, 'num_layers': 10, 'dim_feedforward': 128}
+2023-12-15 06:36:54,223 INFO    MainThread:209459 [wandb_run.py:_config_callback():1324] config_cb None None {'architecture': 'transformer'}
+2023-12-15 06:49:59,376 INFO    MainThread:209459 [wandb_run.py:_finish():1934] finishing run michaelyhuang23/songflow/dsdqnd0e
+2023-12-15 06:49:59,376 INFO    MainThread:209459 [wandb_run.py:_atexit_cleanup():2168] got exitcode: 0
+2023-12-15 06:49:59,377 INFO    MainThread:209459 [wandb_run.py:_restore():2151] restore
+2023-12-15 06:49:59,377 INFO    MainThread:209459 [wandb_run.py:_restore():2157] restore done
+2023-12-15 06:50:00,467 INFO    MainThread:209459 [wandb_run.py:_footer_history_summary_info():3554] rendering history
+2023-12-15 06:50:00,468 INFO    MainThread:209459 [wandb_run.py:_footer_history_summary_info():3586] rendering summary

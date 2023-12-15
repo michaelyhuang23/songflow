@@ -1,0 +1,1096 @@
+/var/spool/slurmd/job24492886/slurm_script: line 8: module: command not found
+wandb: Tracking run with wandb version 0.15.11
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: epoch ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁████████████████████
+wandb:  iter ▁▁▂▂▂▃▃▃▄▄▅▅▅▆▆▆▇▇▇█▁▁▂▂▂▃▃▃▄▄▅▅▅▆▆▆▇▇▇█
+wandb:  loss █▅▁                                     
+wandb: 
+wandb: Run summary:
+wandb: epoch 1
+wandb:  iter 2685
+wandb:  loss nan
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/gridsan/yhuang1/songflow/transformer_flow/wandb_log/wandb/offline-run-20231215_065023-hl6jkq1y
+wandb: Find logs at: ./wandb_log/wandb/offline-run-20231215_065023-hl6jkq1y/logs
+Using device: cuda
+Epoch 0, Iter: 0, Loss: 7653366.5
+-0.24829375743865967 0.07757436484098434 0.2345636785030365
+Epoch 0, Iter: 10, Loss: 7628154.5
+-0.2436269372701645 0.07735001295804977 0.23724797368049622
+Epoch 0, Iter: 20, Loss: 7604251.5
+-0.24532505869865417 0.07876028120517731 0.23723971843719482
+Epoch 0, Iter: 30, Loss: 7576641.5
+-0.2599119544029236 0.08214674144983292 0.24114136397838593
+Epoch 0, Iter: 40, Loss: 7538397.0
+-0.3000680208206177 0.08899249881505966 0.2555617392063141
+Epoch 0, Iter: 50, Loss: 7474120.0
+-0.36043983697891235 0.10445143282413483 0.31126344203948975
+Epoch 0, Iter: 60, Loss: 7319000.0
+-0.4983440637588501 0.1584741324186325 0.5049917101860046
+Epoch 0, Iter: 70, Loss: 6885403.5
+-1.228992223739624 0.40948042273521423 1.7810053825378418
+Epoch 0, Iter: 80, Loss: 7065156.0
+-0.6701476573944092 0.22289130091667175 0.8416980504989624
+Epoch 0, Iter: 90, Loss: 7080641.0
+-0.6540964841842651 0.21295888721942902 0.7959288358688354
+Epoch 0, Iter: 100, Loss: 7052889.5
+-0.7201741933822632 0.2296256721019745 0.8546103239059448
+Epoch 0, Iter: 110, Loss: 7002985.5
+-0.8380715250968933 0.2643333971500397 0.9795219898223877
+Epoch 0, Iter: 120, Loss: 6932284.0
+-1.0242950916290283 0.3223525881767273 1.2540923357009888
+Epoch 0, Iter: 130, Loss: 6833677.0
+-1.3306761980056763 0.41950222849845886 1.7356210947036743
+Epoch 0, Iter: 140, Loss: 6695712.5
+-1.9527000188827515 0.5708134770393372 2.538478374481201
+Epoch 0, Iter: 150, Loss: 6502154.5
+-2.4465649127960205 0.6950582265853882 2.944279670715332
+Epoch 0, Iter: 160, Loss: 6274346.5
+-2.8485536575317383 0.611890435218811 2.648777723312378
+Epoch 0, Iter: 170, Loss: 6022847.0
+-2.5079429149627686 0.6943609118461609 2.9123547077178955
+Epoch 0, Iter: 180, Loss: 5740369.5
+-2.9252243041992188 0.6921278834342957 2.989299774169922
+Epoch 0, Iter: 190, Loss: 5695684.5
+-1.669224739074707 0.4797292947769165 1.6559736728668213
+Epoch 0, Iter: 200, Loss: 5386395.0
+-2.6718077659606934 0.6110342741012573 4.656195640563965
+Epoch 0, Iter: 210, Loss: 5119415.5
+-6.605097770690918 0.8327895998954773 15.482498168945312
+Epoch 0, Iter: 220, Loss: 4989693.0
+-5.355834484100342 0.7868348360061646 4.52081298828125
+Epoch 0, Iter: 230, Loss: 4834440.0
+-5.737111568450928 0.7580488324165344 4.769504547119141
+Epoch 0, Iter: 240, Loss: 5076596.0
+-4.024174213409424 0.8720977306365967 4.592884063720703
+Epoch 0, Iter: 250, Loss: 4750807.5
+-6.723380088806152 0.759094774723053 6.634270668029785
+Epoch 0, Iter: 260, Loss: 4420814.5
+-17.738874435424805 0.9247178435325623 11.521531105041504
+Epoch 0, Iter: 270, Loss: 4434087.5
+-6.399479866027832 0.6967282295227051 4.804039478302002
+Epoch 0, Iter: 280, Loss: 4171008.0
+-17.448320388793945 1.0662450790405273 27.93085289001465
+Epoch 0, Iter: 290, Loss: 4364916.5
+-6.481751918792725 0.7569782137870789 4.317592144012451
+Epoch 0, Iter: 300, Loss: 4010468.75
+-8.953666687011719 0.7565599679946899 7.787662506103516
+Epoch 0, Iter: 310, Loss: 4154258.75
+-3.567657232284546 0.6764978766441345 5.7079949378967285
+Epoch 0, Iter: 320, Loss: 3812952.0
+-8.772819519042969 0.872793436050415 6.996008396148682
+Epoch 0, Iter: 330, Loss: 3726090.75
+-6.558945178985596 0.8734841346740723 6.854068279266357
+Epoch 0, Iter: 340, Loss: 3775200.0
+-5.23484468460083 0.746815025806427 6.819296360015869
+Epoch 0, Iter: 350, Loss: 3466900.75
+-8.300163269042969 0.8769774436950684 7.279167652130127
+Epoch 0, Iter: 360, Loss: 3389720.75
+-8.335683822631836 0.8260884284973145 10.225852966308594
+Epoch 0, Iter: 370, Loss: 3673348.5
+-4.048354625701904 0.7303378582000732 4.972619533538818
+Epoch 0, Iter: 380, Loss: 3275358.5
+-9.710003852844238 0.8206744194030762 10.411672592163086
+Epoch 0, Iter: 390, Loss: nan
+nan nan nan
+Epoch 0, Iter: 400, Loss: nan
+nan nan nan
+Epoch 0, Iter: 410, Loss: nan
+nan nan nan
+Epoch 0, Iter: 420, Loss: nan
+nan nan nan
+Epoch 0, Iter: 430, Loss: nan
+nan nan nan
+Epoch 0, Iter: 440, Loss: nan
+nan nan nan
+Epoch 0, Iter: 450, Loss: nan
+nan nan nan
+Epoch 0, Iter: 460, Loss: nan
+nan nan nan
+Epoch 0, Iter: 470, Loss: nan
+nan nan nan
+Epoch 0, Iter: 480, Loss: nan
+nan nan nan
+Epoch 0, Iter: 490, Loss: nan
+nan nan nan
+Epoch 0, Iter: 500, Loss: nan
+nan nan nan
+Epoch 0, Iter: 510, Loss: nan
+nan nan nan
+Epoch 0, Iter: 520, Loss: nan
+nan nan nan
+Epoch 0, Iter: 530, Loss: nan
+nan nan nan
+Epoch 0, Iter: 540, Loss: nan
+nan nan nan
+Epoch 0, Iter: 550, Loss: nan
+nan nan nan
+Epoch 0, Iter: 560, Loss: nan
+nan nan nan
+Epoch 0, Iter: 570, Loss: nan
+nan nan nan
+Epoch 0, Iter: 580, Loss: nan
+nan nan nan
+Epoch 0, Iter: 590, Loss: nan
+nan nan nan
+Epoch 0, Iter: 600, Loss: nan
+nan nan nan
+Epoch 0, Iter: 610, Loss: nan
+nan nan nan
+Epoch 0, Iter: 620, Loss: nan
+nan nan nan
+Epoch 0, Iter: 630, Loss: nan
+nan nan nan
+Epoch 0, Iter: 640, Loss: nan
+nan nan nan
+Epoch 0, Iter: 650, Loss: nan
+nan nan nan
+Epoch 0, Iter: 660, Loss: nan
+nan nan nan
+Epoch 0, Iter: 670, Loss: nan
+nan nan nan
+Epoch 0, Iter: 680, Loss: nan
+nan nan nan
+Epoch 0, Iter: 690, Loss: nan
+nan nan nan
+Epoch 0, Iter: 700, Loss: nan
+nan nan nan
+Epoch 0, Iter: 710, Loss: nan
+nan nan nan
+Epoch 0, Iter: 720, Loss: nan
+nan nan nan
+Epoch 0, Iter: 730, Loss: nan
+nan nan nan
+Epoch 0, Iter: 740, Loss: nan
+nan nan nan
+Epoch 0, Iter: 750, Loss: nan
+nan nan nan
+Epoch 0, Iter: 760, Loss: nan
+nan nan nan
+Epoch 0, Iter: 770, Loss: nan
+nan nan nan
+Epoch 0, Iter: 780, Loss: nan
+nan nan nan
+Epoch 0, Iter: 790, Loss: nan
+nan nan nan
+Epoch 0, Iter: 800, Loss: nan
+nan nan nan
+Epoch 0, Iter: 810, Loss: nan
+nan nan nan
+Epoch 0, Iter: 820, Loss: nan
+nan nan nan
+Epoch 0, Iter: 830, Loss: nan
+nan nan nan
+Epoch 0, Iter: 840, Loss: nan
+nan nan nan
+Epoch 0, Iter: 850, Loss: nan
+nan nan nan
+Epoch 0, Iter: 860, Loss: nan
+nan nan nan
+Epoch 0, Iter: 870, Loss: nan
+nan nan nan
+Epoch 0, Iter: 880, Loss: nan
+nan nan nan
+Epoch 0, Iter: 890, Loss: nan
+nan nan nan
+Epoch 0, Iter: 900, Loss: nan
+nan nan nan
+Epoch 0, Iter: 910, Loss: nan
+nan nan nan
+Epoch 0, Iter: 920, Loss: nan
+nan nan nan
+Epoch 0, Iter: 930, Loss: nan
+nan nan nan
+Epoch 0, Iter: 940, Loss: nan
+nan nan nan
+Epoch 0, Iter: 950, Loss: nan
+nan nan nan
+Epoch 0, Iter: 960, Loss: nan
+nan nan nan
+Epoch 0, Iter: 970, Loss: nan
+nan nan nan
+Epoch 0, Iter: 980, Loss: nan
+nan nan nan
+Epoch 0, Iter: 990, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1000, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1010, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1020, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1030, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1040, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1050, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1060, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1070, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1080, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1090, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1100, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1110, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1120, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1130, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1140, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1150, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1160, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1170, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1180, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1190, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1200, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1210, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1220, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1230, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1240, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1250, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1260, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1270, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1280, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1290, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1300, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1310, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1320, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1330, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1340, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1350, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1360, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1370, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1380, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1390, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1400, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1410, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1420, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1430, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1440, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1450, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1460, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1470, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1480, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1490, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1500, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1510, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1520, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1530, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1540, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1550, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1560, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1570, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1580, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1590, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1600, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1610, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1620, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1630, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1640, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1650, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1660, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1670, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1680, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1690, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1700, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1710, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1720, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1730, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1740, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1750, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1760, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1770, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1780, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1790, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1800, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1810, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1820, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1830, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1840, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1850, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1860, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1870, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1880, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1890, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1900, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1910, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1920, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1930, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1940, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1950, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1960, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1970, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1980, Loss: nan
+nan nan nan
+Epoch 0, Iter: 1990, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2000, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2010, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2020, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2030, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2040, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2050, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2060, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2070, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2080, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2090, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2100, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2110, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2120, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2130, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2140, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2150, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2160, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2170, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2180, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2190, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2200, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2210, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2220, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2230, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2240, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2250, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2260, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2270, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2280, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2290, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2300, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2310, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2320, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2330, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2340, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2350, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2360, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2370, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2380, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2390, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2400, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2410, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2420, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2430, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2440, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2450, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2460, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2470, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2480, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2490, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2500, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2510, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2520, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2530, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2540, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2550, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2560, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2570, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2580, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2590, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2600, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2610, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2620, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2630, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2640, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2650, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2660, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2670, Loss: nan
+nan nan nan
+Epoch 0, Iter: 2680, Loss: nan
+nan nan nan
+Epoch 1, Iter: 0, Loss: nan
+nan nan nan
+Epoch 1, Iter: 10, Loss: nan
+nan nan nan
+Epoch 1, Iter: 20, Loss: nan
+nan nan nan
+Epoch 1, Iter: 30, Loss: nan
+nan nan nan
+Epoch 1, Iter: 40, Loss: nan
+nan nan nan
+Epoch 1, Iter: 50, Loss: nan
+nan nan nan
+Epoch 1, Iter: 60, Loss: nan
+nan nan nan
+Epoch 1, Iter: 70, Loss: nan
+nan nan nan
+Epoch 1, Iter: 80, Loss: nan
+nan nan nan
+Epoch 1, Iter: 90, Loss: nan
+nan nan nan
+Epoch 1, Iter: 100, Loss: nan
+nan nan nan
+Epoch 1, Iter: 110, Loss: nan
+nan nan nan
+Epoch 1, Iter: 120, Loss: nan
+nan nan nan
+Epoch 1, Iter: 130, Loss: nan
+nan nan nan
+Epoch 1, Iter: 140, Loss: nan
+nan nan nan
+Epoch 1, Iter: 150, Loss: nan
+nan nan nan
+Epoch 1, Iter: 160, Loss: nan
+nan nan nan
+Epoch 1, Iter: 170, Loss: nan
+nan nan nan
+Epoch 1, Iter: 180, Loss: nan
+nan nan nan
+Epoch 1, Iter: 190, Loss: nan
+nan nan nan
+Epoch 1, Iter: 200, Loss: nan
+nan nan nan
+Epoch 1, Iter: 210, Loss: nan
+nan nan nan
+Epoch 1, Iter: 220, Loss: nan
+nan nan nan
+Epoch 1, Iter: 230, Loss: nan
+nan nan nan
+Epoch 1, Iter: 240, Loss: nan
+nan nan nan
+Epoch 1, Iter: 250, Loss: nan
+nan nan nan
+Epoch 1, Iter: 260, Loss: nan
+nan nan nan
+Epoch 1, Iter: 270, Loss: nan
+nan nan nan
+Epoch 1, Iter: 280, Loss: nan
+nan nan nan
+Epoch 1, Iter: 290, Loss: nan
+nan nan nan
+Epoch 1, Iter: 300, Loss: nan
+nan nan nan
+Epoch 1, Iter: 310, Loss: nan
+nan nan nan
+Epoch 1, Iter: 320, Loss: nan
+nan nan nan
+Epoch 1, Iter: 330, Loss: nan
+nan nan nan
+Epoch 1, Iter: 340, Loss: nan
+nan nan nan
+Epoch 1, Iter: 350, Loss: nan
+nan nan nan
+Epoch 1, Iter: 360, Loss: nan
+nan nan nan
+Epoch 1, Iter: 370, Loss: nan
+nan nan nan
+Epoch 1, Iter: 380, Loss: nan
+nan nan nan
+Epoch 1, Iter: 390, Loss: nan
+nan nan nan
+Epoch 1, Iter: 400, Loss: nan
+nan nan nan
+Epoch 1, Iter: 410, Loss: nan
+nan nan nan
+Epoch 1, Iter: 420, Loss: nan
+nan nan nan
+Epoch 1, Iter: 430, Loss: nan
+nan nan nan
+Epoch 1, Iter: 440, Loss: nan
+nan nan nan
+Epoch 1, Iter: 450, Loss: nan
+nan nan nan
+Epoch 1, Iter: 460, Loss: nan
+nan nan nan
+Epoch 1, Iter: 470, Loss: nan
+nan nan nan
+Epoch 1, Iter: 480, Loss: nan
+nan nan nan
+Epoch 1, Iter: 490, Loss: nan
+nan nan nan
+Epoch 1, Iter: 500, Loss: nan
+nan nan nan
+Epoch 1, Iter: 510, Loss: nan
+nan nan nan
+Epoch 1, Iter: 520, Loss: nan
+nan nan nan
+Epoch 1, Iter: 530, Loss: nan
+nan nan nan
+Epoch 1, Iter: 540, Loss: nan
+nan nan nan
+Epoch 1, Iter: 550, Loss: nan
+nan nan nan
+Epoch 1, Iter: 560, Loss: nan
+nan nan nan
+Epoch 1, Iter: 570, Loss: nan
+nan nan nan
+Epoch 1, Iter: 580, Loss: nan
+nan nan nan
+Epoch 1, Iter: 590, Loss: nan
+nan nan nan
+Epoch 1, Iter: 600, Loss: nan
+nan nan nan
+Epoch 1, Iter: 610, Loss: nan
+nan nan nan
+Epoch 1, Iter: 620, Loss: nan
+nan nan nan
+Epoch 1, Iter: 630, Loss: nan
+nan nan nan
+Epoch 1, Iter: 640, Loss: nan
+nan nan nan
+Epoch 1, Iter: 650, Loss: nan
+nan nan nan
+Epoch 1, Iter: 660, Loss: nan
+nan nan nan
+Epoch 1, Iter: 670, Loss: nan
+nan nan nan
+Epoch 1, Iter: 680, Loss: nan
+nan nan nan
+Epoch 1, Iter: 690, Loss: nan
+nan nan nan
+Epoch 1, Iter: 700, Loss: nan
+nan nan nan
+Epoch 1, Iter: 710, Loss: nan
+nan nan nan
+Epoch 1, Iter: 720, Loss: nan
+nan nan nan
+Epoch 1, Iter: 730, Loss: nan
+nan nan nan
+Epoch 1, Iter: 740, Loss: nan
+nan nan nan
+Epoch 1, Iter: 750, Loss: nan
+nan nan nan
+Epoch 1, Iter: 760, Loss: nan
+nan nan nan
+Epoch 1, Iter: 770, Loss: nan
+nan nan nan
+Epoch 1, Iter: 780, Loss: nan
+nan nan nan
+Epoch 1, Iter: 790, Loss: nan
+nan nan nan
+Epoch 1, Iter: 800, Loss: nan
+nan nan nan
+Epoch 1, Iter: 810, Loss: nan
+nan nan nan
+Epoch 1, Iter: 820, Loss: nan
+nan nan nan
+Epoch 1, Iter: 830, Loss: nan
+nan nan nan
+Epoch 1, Iter: 840, Loss: nan
+nan nan nan
+Epoch 1, Iter: 850, Loss: nan
+nan nan nan
+Epoch 1, Iter: 860, Loss: nan
+nan nan nan
+Epoch 1, Iter: 870, Loss: nan
+nan nan nan
+Epoch 1, Iter: 880, Loss: nan
+nan nan nan
+Epoch 1, Iter: 890, Loss: nan
+nan nan nan
+Epoch 1, Iter: 900, Loss: nan
+nan nan nan
+Epoch 1, Iter: 910, Loss: nan
+nan nan nan
+Epoch 1, Iter: 920, Loss: nan
+nan nan nan
+Epoch 1, Iter: 930, Loss: nan
+nan nan nan
+Epoch 1, Iter: 940, Loss: nan
+nan nan nan
+Epoch 1, Iter: 950, Loss: nan
+nan nan nan
+Epoch 1, Iter: 960, Loss: nan
+nan nan nan
+Epoch 1, Iter: 970, Loss: nan
+nan nan nan
+Epoch 1, Iter: 980, Loss: nan
+nan nan nan
+Epoch 1, Iter: 990, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1000, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1010, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1020, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1030, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1040, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1050, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1060, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1070, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1080, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1090, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1100, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1110, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1120, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1130, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1140, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1150, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1160, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1170, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1180, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1190, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1200, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1210, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1220, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1230, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1240, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1250, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1260, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1270, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1280, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1290, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1300, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1310, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1320, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1330, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1340, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1350, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1360, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1370, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1380, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1390, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1400, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1410, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1420, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1430, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1440, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1450, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1460, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1470, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1480, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1490, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1500, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1510, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1520, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1530, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1540, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1550, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1560, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1570, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1580, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1590, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1600, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1610, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1620, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1630, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1640, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1650, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1660, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1670, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1680, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1690, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1700, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1710, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1720, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1730, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1740, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1750, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1760, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1770, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1780, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1790, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1800, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1810, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1820, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1830, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1840, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1850, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1860, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1870, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1880, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1890, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1900, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1910, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1920, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1930, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1940, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1950, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1960, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1970, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1980, Loss: nan
+nan nan nan
+Epoch 1, Iter: 1990, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2000, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2010, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2020, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2030, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2040, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2050, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2060, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2070, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2080, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2090, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2100, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2110, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2120, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2130, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2140, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2150, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2160, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2170, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2180, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2190, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2200, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2210, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2220, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2230, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2240, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2250, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2260, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2270, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2280, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2290, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2300, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2310, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2320, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2330, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2340, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2350, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2360, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2370, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2380, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2390, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2400, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2410, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2420, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2430, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2440, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2450, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2460, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2470, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2480, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2490, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2500, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2510, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2520, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2530, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2540, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2550, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2560, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2570, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2580, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2590, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2600, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2610, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2620, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2630, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2640, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2650, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2660, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2670, Loss: nan
+nan nan nan
+Epoch 1, Iter: 2680, Loss: nan
+nan nan nan

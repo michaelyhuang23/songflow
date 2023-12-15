@@ -1,0 +1,26 @@
+2023-12-15 06:19:51,781 INFO    MainThread:213251 [wandb_setup.py:_flush():76] Current SDK version is 0.15.11
+2023-12-15 06:19:51,782 INFO    MainThread:213251 [wandb_setup.py:_flush():76] Configure stats pid to 213251
+2023-12-15 06:19:51,782 INFO    MainThread:213251 [wandb_setup.py:_flush():76] Loading settings from /home/gridsan/yhuang1/.config/wandb/settings
+2023-12-15 06:19:51,782 INFO    MainThread:213251 [wandb_setup.py:_flush():76] Loading settings from /home/gridsan/yhuang1/songflow/transformer_flow/wandb/settings
+2023-12-15 06:19:51,782 INFO    MainThread:213251 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***', 'mode': 'offline', 'root_dir': '/home/gridsan/yhuang1/songflow/transformer_flow/wandb_log'}
+2023-12-15 06:19:51,782 INFO    MainThread:213251 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-12-15 06:19:51,782 INFO    MainThread:213251 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'transformer_flow/train.py', 'program_abspath': '/home/gridsan/yhuang1/songflow/transformer_flow/train.py', 'program': '/home/gridsan/yhuang1/songflow/transformer_flow/train.py'}
+2023-12-15 06:19:51,782 INFO    MainThread:213251 [wandb_init.py:_log_setup():528] Logging user logs to /home/gridsan/yhuang1/songflow/transformer_flow/wandb_log/wandb/offline-run-20231215_061951-i343lmch/logs/debug.log
+2023-12-15 06:19:51,782 INFO    MainThread:213251 [wandb_init.py:_log_setup():529] Logging internal logs to /home/gridsan/yhuang1/songflow/transformer_flow/wandb_log/wandb/offline-run-20231215_061951-i343lmch/logs/debug-internal.log
+2023-12-15 06:19:51,782 INFO    MainThread:213251 [wandb_init.py:init():568] calling init triggers
+2023-12-15 06:19:51,782 INFO    MainThread:213251 [wandb_init.py:init():575] wandb.init called with sweep_config: {}
+config: {}
+2023-12-15 06:19:51,782 INFO    MainThread:213251 [wandb_init.py:init():618] starting backend
+2023-12-15 06:19:51,782 INFO    MainThread:213251 [wandb_init.py:init():622] setting up manager
+2023-12-15 06:19:51,790 INFO    MainThread:213251 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-12-15 06:19:51,794 INFO    MainThread:213251 [wandb_init.py:init():628] backend started and connected
+2023-12-15 06:19:51,800 INFO    MainThread:213251 [wandb_init.py:init():720] updated telemetry
+2023-12-15 06:19:51,822 INFO    MainThread:213251 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2023-12-15 06:19:51,827 INFO    MainThread:213251 [wandb_init.py:init():804] starting run threads in backend
+2023-12-15 06:19:58,183 INFO    MainThread:213251 [wandb_run.py:_console_start():2199] atexit reg
+2023-12-15 06:19:58,183 INFO    MainThread:213251 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2023-12-15 06:19:58,183 INFO    MainThread:213251 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2023-12-15 06:19:58,183 INFO    MainThread:213251 [wandb_run.py:_redirect():2144] Redirects installed.
+2023-12-15 06:19:58,184 INFO    MainThread:213251 [wandb_init.py:init():845] run started, returning control to user process
+2023-12-15 06:19:58,184 INFO    MainThread:213251 [wandb_run.py:_config_callback():1324] config_cb None None {'dataset': 'square_jamendo_data', 'epochs': 10, 'batch_size': 5, 'lr': 1e-05, 'num_layers': 10, 'dim_feedforward': 128}
+2023-12-15 06:19:58,184 INFO    MainThread:213251 [wandb_run.py:_config_callback():1324] config_cb None None {'architecture': 'transformer'}

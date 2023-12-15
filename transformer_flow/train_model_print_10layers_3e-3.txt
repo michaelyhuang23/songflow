@@ -1,0 +1,5 @@
+/var/spool/slurmd/job24492873/slurm_script: line 8: module: command not found
+wandb: Tracking run with wandb version 0.15.11
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+slurmstepd-d-13-5-1: error: *** JOB 24492873 ON d-13-5-1 CANCELLED AT 2023-12-15T06:24:08 ***

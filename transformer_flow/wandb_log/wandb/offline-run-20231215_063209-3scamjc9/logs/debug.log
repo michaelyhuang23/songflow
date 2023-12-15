@@ -1,0 +1,36 @@
+2023-12-15 06:32:09,123 INFO    MainThread:800186 [wandb_setup.py:_flush():76] Current SDK version is 0.15.11
+2023-12-15 06:32:09,124 INFO    MainThread:800186 [wandb_setup.py:_flush():76] Configure stats pid to 800186
+2023-12-15 06:32:09,124 INFO    MainThread:800186 [wandb_setup.py:_flush():76] Loading settings from /home/gridsan/yhuang1/.config/wandb/settings
+2023-12-15 06:32:09,124 INFO    MainThread:800186 [wandb_setup.py:_flush():76] Loading settings from /home/gridsan/yhuang1/songflow/transformer_flow/wandb/settings
+2023-12-15 06:32:09,125 INFO    MainThread:800186 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***', 'mode': 'offline', 'root_dir': '/home/gridsan/yhuang1/songflow/transformer_flow/wandb_log'}
+2023-12-15 06:32:09,125 INFO    MainThread:800186 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-12-15 06:32:09,125 INFO    MainThread:800186 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'transformer_flow/train.py', 'program_abspath': '/home/gridsan/yhuang1/songflow/transformer_flow/train.py', 'program': '/home/gridsan/yhuang1/songflow/transformer_flow/train.py'}
+2023-12-15 06:32:09,125 INFO    MainThread:800186 [wandb_init.py:_log_setup():528] Logging user logs to /home/gridsan/yhuang1/songflow/transformer_flow/wandb_log/wandb/offline-run-20231215_063209-3scamjc9/logs/debug.log
+2023-12-15 06:32:09,125 INFO    MainThread:800186 [wandb_init.py:_log_setup():529] Logging internal logs to /home/gridsan/yhuang1/songflow/transformer_flow/wandb_log/wandb/offline-run-20231215_063209-3scamjc9/logs/debug-internal.log
+2023-12-15 06:32:09,125 INFO    MainThread:800186 [wandb_init.py:init():568] calling init triggers
+2023-12-15 06:32:09,125 INFO    MainThread:800186 [wandb_init.py:init():575] wandb.init called with sweep_config: {}
+config: {}
+2023-12-15 06:32:09,125 INFO    MainThread:800186 [wandb_init.py:init():618] starting backend
+2023-12-15 06:32:09,125 INFO    MainThread:800186 [wandb_init.py:init():622] setting up manager
+2023-12-15 06:32:09,131 INFO    MainThread:800186 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-12-15 06:32:09,133 INFO    MainThread:800186 [wandb_init.py:init():628] backend started and connected
+2023-12-15 06:32:09,139 INFO    MainThread:800186 [wandb_init.py:init():720] updated telemetry
+2023-12-15 06:32:09,154 INFO    MainThread:800186 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2023-12-15 06:32:09,159 INFO    MainThread:800186 [wandb_init.py:init():804] starting run threads in backend
+2023-12-15 06:32:11,763 WARNING MainThread:800186 [wandb_init.py:init():1192] interrupted
+Traceback (most recent call last):
+  File "/home/gridsan/yhuang1/.local/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 1170, in init
+    run = wi.init()
+  File "/home/gridsan/yhuang1/.local/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 815, in init
+    run_start_result = run_start_handle.wait(timeout=30)
+  File "/home/gridsan/yhuang1/.local/lib/python3.9/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "/home/gridsan/yhuang1/.local/lib/python3.9/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "/home/gridsan/yhuang1/.local/lib/python3.9/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+  File "/state/partition1/llgrid/pkg/anaconda/anaconda3-2023a-pytorch/lib/python3.9/threading.py", line 581, in wait
+    signaled = self._cond.wait(timeout)
+  File "/state/partition1/llgrid/pkg/anaconda/anaconda3-2023a-pytorch/lib/python3.9/threading.py", line 316, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
