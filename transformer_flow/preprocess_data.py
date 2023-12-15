@@ -63,7 +63,7 @@ if __name__ == '__main__':
     file_names = [file for file in os.listdir(root_dir) if file.endswith('.wav')]
 
     # Number of processes
-    num_processes = multiprocessing.cpu_count()
+    num_processes = 8
 
     # Create a pool of processes
     pool = multiprocessing.Pool(processes=num_processes)
